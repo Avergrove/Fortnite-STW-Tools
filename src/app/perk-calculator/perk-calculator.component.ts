@@ -7,26 +7,24 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PerkCalculatorComponent implements OnInit {
 
+  @Input() baseDamageBonus: number;
+  @Input() baseHeadshotBonus: number;
   @Input() baseCritChance: number;
-  @Input() baseCritDamage: number;
+  @Input() baseCritBonus: number;
 
+  @Input() perkDamageBonus: number;
+  @Input() perkHeadshotBonus: number;
   @Input() perkCritRating: number;
-  @Input() perkCritDamage: number;
+  @Input() perkCritBonus: number;
 
-  totalCritRating: number;
-  totalCritChance: number;
-  totalCritDamage: number;
+  finalDamageBonus: number;
+  finalHeadshotBonus: number;
+  finalCritChance: number;
+  finalCritBonus: number;
 
-  critChanceIncrease: number;
-  critDamageIncrease: number;
-
-  finalDamage: number;
-
-  avgDamageIncrease:number; 
-
-  // Debug
-  baseCritRating: number;
-
+  baseTotalBonus: number;
+  finalTotalBonus: number;
+  finalPerkBonus: number;
 
   constructor() { }
 
@@ -37,16 +35,29 @@ export class PerkCalculatorComponent implements OnInit {
   // Crit Rating = (50 * CritChance) / (75 - CritChance);
 
   recalculate($event){
-    this.baseCritRating = (50 * this.baseCritChance) / (75 - this.baseCritChance);
-    this.totalCritRating = this.baseCritRating + this.perkCritRating;
 
-    
-    this.totalCritChance = (75 * this.totalCritRating) / (50 + this.totalCritRating);
-    this.critChanceIncrease = this.totalCritChance - this.baseCritChance;
-    
-    this.totalCritDamage = this.baseCritDamage + this.perkCritDamage;
+    // Assuming you do consistent headshots.
+    this.baseTotalBonus = (1 + this.baseDamageBonus/100) * (this.baseHeadshotBonus/100) * (this.baseCritChance / 100) * (this.baseCritBonus / 100) * 100;
 
-    this.avgDamageIncrease = this.critChanceIncrease * (this.totalCritDamage/100);
+    // Damage Bonus
+    this.finalDamageBonus = this.baseDamageBonus + this.perkDamageBonus;
+
+    // Headshot Damage Bonus
+    this.finalHeadshotBonus = this.baseHeadshotBonus + this.perkHeadshotBonus;
+
+    // Crit Rating
+    var baseCritRating = (50 * this.baseCritChance) / (75 - this.baseCritChance);
+    var finalCritRating = baseCritRating + this.perkCritRating;
+    this.finalCritChance = (75 * finalCritRating) / (50 + finalCritRating);
+
+    // Crit Bonus
+    this.finalCritBonus = this.baseCritBonus + this.perkCritBonus;
+
+    // Final Damage Bonus
+    this.finalTotalBonus = (1 + this.finalDamageBonus / 100) * (this.finalHeadshotBonus/100) * (this.finalCritChance / 100) * (this.finalCritBonus / 100) * 100;
+
+    // Perk Damage Bonus
+    this.finalPerkBonus = this.finalTotalBonus - this.baseTotalBonus;
 
   }
 }

@@ -1,13 +1,14 @@
 <div class="card" style="width: 18rem;">
+
+    <div class="card-header">
+        Perk List
+    </div>
+ 
     <div class="card-body">
-        <h5 class="card-title">Perk List</h5>
-      <ul class="list-group">
-          <li class="list-group-item">T1 Perk</li>
-          <li class="list-group-item">T2 Perk</li>
-          <li class="list-group-item">T3 Perk</li>
-          <li class="list-group-item">T4 Perk</li>
-          <li class="list-group-item">T5 Perk</li>
-          <li class="list-group-item">T6 Perk</li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let perk of perks">
+                {{perk.description + perk.baseAmount}}
+            </li>
         </ul>
     </div>
-  </div>
+</div>

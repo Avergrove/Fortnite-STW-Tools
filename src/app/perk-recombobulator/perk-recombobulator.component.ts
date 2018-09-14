@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Perk, StatsPerk } from '../models/perk';
+
+import { Constants } from 'src/app/models/constants';
 
 @Component({
   selector: 'app-perk-recombobulator',
@@ -7,7 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerkRecombobulatorComponent implements OnInit {
 
-  constructor() { }
+  T1Perks: Perk[];
+  T2Perks: Perk[];
+  T3Perks: Perk[];
+  T4Perks: Perk[];
+  T5Perks: Perk[];
+  T6Perks: Perk[];
+
+
+
+  constructor() { 
+
+
+  }
 
   ngOnInit() {
   }
