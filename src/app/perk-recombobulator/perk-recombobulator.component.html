@@ -1,15 +1,17 @@
 <div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">Perk Recombobulator</h5>
-      <ul class="list-group">
-          <li class="list-group-item">Selected Perk</li>
-      </ul>
+    <div class="card-header">
+        <h5>Perk Recombobulator</h5>
+    </div>
 
-      <ul class="list-group">
-          <li class="list-group-item">Choice 1</li>
-          <li class="list-group-item">Choice 2</li>
-          <li class="list-group-item">Choice 3</li>
-          <li class="list-group-item">Choice 4</li>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">Selected Perk</li>
+        </ul>
+
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let perk of T1Perks">
+                {{perk.descriptionToString()}}
+            </li>
         </ul>
     </div>
-  </div>
+</div>

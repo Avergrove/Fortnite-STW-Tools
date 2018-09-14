@@ -10,6 +10,8 @@ import { Constants } from 'src/app/models/constants';
 })
 export class PerkRecombobulatorComponent implements OnInit {
 
+  tierToDisplay: number = 1;
+
   T1Perks: Perk[];
   T2Perks: Perk[];
   T3Perks: Perk[];
@@ -20,11 +22,19 @@ export class PerkRecombobulatorComponent implements OnInit {
 
 
   constructor() { 
+    this.T1Perks = [];
+    this.T1Perks.push(new StatsPerk("Damage Up", Constants.TEXT_PERK_DAMAGE_BONUS, 1, 5, Constants.STATS_DAMAGE, 10));
 
-
+    
+    this.T2Perks = [];
+    this.T2Perks.push(new StatsPerk("Crit Up", Constants.TEXT_PERK_CRIT_RATING, 1, 5, Constants.STATS_CRIT_CHANCE, 10));
   }
 
   ngOnInit() {
+  }
+
+  generatePerks($event: number){
+    this.tierToDisplay = $event;
   }
 
 }

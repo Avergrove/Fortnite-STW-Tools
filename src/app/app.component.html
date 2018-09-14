@@ -1,21 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to the Perk Recombobulator!
-  </h1>
+<div id="perkRecombobulator" class="row">
+  <div class="col-md">
+    <app-weapon-stats></app-weapon-stats>
+  </div>
+  <div class="col-md">
+    <app-perk-list (onPerkSlotSelectEvent)="recombobulator.generatePerks($event)"></app-perk-list>
+  </div>
+  <div class="col-md">
+    <app-perk-recombobulator #recombobulator></app-perk-recombobulator>
+  </div>
 </div>
 
-  <div class="row">
-    <div class="col-md">
-      <app-weapon-stats></app-weapon-stats>
-    </div>
-    <div class="col-md">
-      <app-perk-list></app-perk-list>
-    </div>
-    <div class="col-md">
-      <app-perk-recombobulator></app-perk-recombobulator>
-    </div>
-  </div>
-
-  <app-perk-calculator></app-perk-calculator>
-
+<app-perk-calculator></app-perk-calculator>

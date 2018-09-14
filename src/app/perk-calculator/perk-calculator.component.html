@@ -8,17 +8,17 @@
 
         <div>
 
-            <div>Base Bonus: <input type="number" [(ngModel)]="baseDamageBonus" (ngModelChange)='recalculate($event)'>%</div>
-            <div>Base Headshot Damage: <input type="number" [(ngModel)]="baseHeadshotBonus" (ngModelChange)='recalculate($event)'>%</div>
+            <!--<div>Base Bonus: <input type="number" [(ngModel)]="baseDamageBonus" (ngModelChange)='recalculate($event)'>%  ( This should always be 0)</div>-->
+            <div>Base Headshot Bonus: <input type="number" [(ngModel)]="baseHeadshotBonus" (ngModelChange)='recalculate($event)'>%</div>
             <div>Base Crit Chance: <input type="number" [(ngModel)]="baseCritChance" (ngModelChange)="recalculate($event)">%</div>
-            <div>Base Crit Damage: <input type="number" [(ngModel)]="baseCritBonus" (ngModelChange)='recalculate($event)'>%</div>
+            <div>Base Crit Bonus: <input type="number" [(ngModel)]="baseCritBonus" (ngModelChange)='recalculate($event)'>%</div>
 
             <br/>
 
-            <div>Damage Percentage Increase from Perks: +<input type="number" [(ngModel)]="perkDamageBonus" (ngModelChange)='recalculate($event)'>%</div>
-            <div>Headshot Damage Percentage Increase from Perks: +<input type="number" [(ngModel)]="perkHeadshotBonus" (ngModelChange)='recalculate($event)'>%</div>
+            <div>Damage Bonus Increase from Perks: +<input type="number" [(ngModel)]="perkDamageBonus" (ngModelChange)='recalculate($event)'>%</div>
+            <div>Headshot Bonus Increase from Perks: +<input type="number" [(ngModel)]="perkHeadshotBonus" (ngModelChange)='recalculate($event)'>%</div>
             <div>Crit Rating increase from perk: +<input type="number" [(ngModel)]="perkCritRating" (ngModelChange)='recalculate($event)'></div>
-            <div>Crit Damage increase from perk: +<input type="number" [(ngModel)]="perkCritBonus" (ngModelChange)='recalculate($event)'>%</div>
+            <div>Crit Bonus increase from perk: +<input type="number" [(ngModel)]="perkCritBonus" (ngModelChange)='recalculate($event)'>%</div>
 
             <br/>
 
@@ -31,7 +31,7 @@
 
             <div>Base Damage Bonus: {{baseTotalBonus}}%</div>
             <div>Total Damage Bonus from Perks: {{finalPerkBonus}}%</div>
-            <div>Total Damage Bonus from Perks: {{finalTotalBonus}}%</div>
+            <div>Final Damage Bonus: {{finalTotalBonus}}%</div>
 
         </div>
 

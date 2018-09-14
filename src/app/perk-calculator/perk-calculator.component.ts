@@ -26,7 +26,9 @@ export class PerkCalculatorComponent implements OnInit {
   finalTotalBonus: number;
   finalPerkBonus: number;
 
-  constructor() { }
+  constructor() { 
+    this.baseDamageBonus = 0;
+  }
 
   ngOnInit() {
   }
@@ -36,7 +38,7 @@ export class PerkCalculatorComponent implements OnInit {
 
   recalculate($event){
 
-    // Assuming you do consistent headshots.
+    // Base Total Damage Bonus
     this.baseTotalBonus = (1 + this.baseDamageBonus/100) * (this.baseHeadshotBonus/100) * (this.baseCritChance / 100) * (this.baseCritBonus / 100) * 100;
 
     // Damage Bonus
