@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Perk Results</h5>
+
+        <div>Base Crit Chance: <input type="number" [(ngModel)]="baseCritChance" (ngModelChange)="recalculate($event)" >%</div>
+        <div>Base Crit Damage: <input type="number" [(ngModel)]="baseCritDamage" (ngModelChange)='recalculate($event)' >%</div>
+        <div>Crit Rating increase from perk: +<input type="number" [(ngModel)]="perkCritRating" (ngModelChange)='recalculate($event)' > </div>
+        <div>Crit Damage increase from perk: +<input type="number" [(ngModel)]="perkCritDamage" (ngModelChange)='recalculate($event)' >% </div>
+
+        <div>Total Crit Rating: {{totalCritRating}}</div>
+        <div>Total Crit Chance: {{totalCritChance}}</div>
+
+        <div>Crit Chance Increase: {{critChanceIncrease}} </div>
+        <div>Average damage increase with Crit Chance: {{avgDamageIncrease}}%</div>
+
+
+    </div>
+</div>
