@@ -2,9 +2,18 @@
 
 body{
     /*font-family: 'Mouse Memoirs';*/
-    background-color: #5c5b64;
+    background-color: #29292c;
+    color: rgb(238, 235, 247);
 }
 
 div{
     font-size: 20px;
 }
+
+input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #e7edf3;
+}
+

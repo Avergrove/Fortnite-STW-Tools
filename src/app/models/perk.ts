@@ -1,14 +1,3 @@
-export interface ElementPerk extends Perk {
-  element: string;
-  amount: number;
-}
-
-export interface ConditionPerk extends Perk {
-  condition: string;
-  result: string;
-  amount: number;
-}
-
 export class Perk {
   name: string; // The name of the perk
   description: string; // The written description of the perk

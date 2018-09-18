@@ -1,4 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Type } from '@angular/core';
+
+import { StwService} from 'src/app/stw-service.service';
+import { Weapon } from 'src/app/models/weapon';
+
 
 @Component({
   selector: 'app-perk-calculator',
@@ -7,10 +11,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PerkCalculatorComponent implements OnInit {
 
-  @Input() baseDamageBonus: number;
-  @Input() baseHeadshotBonus: number;
-  @Input() baseCritChance: number;
-  @Input() baseCritBonus: number;
+  @Input() currentDamageBonus: number;
+  @Input() currentHeadshotBonus: number;
+  @Input() currentCritChance: number;
+  @Input() currentCritBonus: number;
 
   @Input() perkDamageBonus: number;
   @Input() perkHeadshotBonus: number;
@@ -26,8 +30,8 @@ export class PerkCalculatorComponent implements OnInit {
   finalTotalBonus: number;
   finalPerkBonus: number;
 
-  constructor() { 
-    this.baseDamageBonus = 0;
+  constructor(private stwService: StwService) { 
+
   }
 
   ngOnInit() {
@@ -38,6 +42,9 @@ export class PerkCalculatorComponent implements OnInit {
 
   recalculate($event){
 
+    var w = this.stwService.getSelectedWeapon();
+
+    /*
     // Base Total Damage Bonus
     this.baseTotalBonus = (1 + this.baseDamageBonus/100) * (this.baseHeadshotBonus/100) * (this.baseCritChance / 100) * (this.baseCritBonus / 100) * 100;
 
@@ -60,6 +67,8 @@ export class PerkCalculatorComponent implements OnInit {
 
     // Perk Damage Bonus
     this.finalPerkBonus = this.finalTotalBonus - this.baseTotalBonus;
+*/
 
   }
+
 }

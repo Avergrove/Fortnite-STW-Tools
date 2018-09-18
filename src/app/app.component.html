@@ -1,13 +1,4 @@
-<div id="perkRecombobulator" class="row">
-  <div class="col-md">
-    <app-weapon-stats></app-weapon-stats>
-  </div>
-  <div class="col-md">
-    <app-perk-list (onPerkSlotSelectEvent)="recombobulator.generatePerks($event)"></app-perk-list>
-  </div>
-  <div class="col-md">
-    <app-perk-recombobulator #recombobulator></app-perk-recombobulator>
-  </div>
+<app-header (onSiteNavSelect)="loadComponents($event)"></app-header>
+<div class="container">
+  <ng-template component-host></ng-template>
 </div>
-
-<app-perk-calculator></app-perk-calculator>

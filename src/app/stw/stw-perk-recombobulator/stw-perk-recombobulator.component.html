@@ -1,0 +1,11 @@
+<div class="row animated fadeInRightBig">
+  <div class="col-md">
+    <app-weapon-stats (statsChangeEvent)="onStatsChange($event)"></app-weapon-stats>
+  </div>
+  <div class="col-md">
+    <app-perk-list (onPerkSlotSelectEvent)="recombobulator.generatePerks($event)"></app-perk-list>
+  </div>
+  <div class="col-md">
+    <app-perk-recombobulator #recombobulator></app-perk-recombobulator>
+  </div>
+</div>

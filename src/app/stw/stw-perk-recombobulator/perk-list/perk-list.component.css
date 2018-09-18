@@ -11,4 +11,6 @@
 
 .list-group-item{
     color: black;
+    cursor: pointer;
+    font-size: 15px;
 }

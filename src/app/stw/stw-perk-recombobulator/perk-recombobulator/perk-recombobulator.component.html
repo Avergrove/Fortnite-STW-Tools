@@ -1,12 +1,15 @@
 <div class="card" style="width: 18rem;">
-
     <div class="card-header">
-        <h5>Current Item Perks</h5>
+        <h5>Perk Recombobulator</h5>
     </div>
- 
+
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item" *ngFor="let perk of perks" (click)="onPerkSlotSelect(5)">
+            <li class="list-group-item">Selected Perk</li>
+        </ul>
+
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let perk of perks">
                 {{perk.descriptionToString()}}
             </li>
         </ul>
