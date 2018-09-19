@@ -10,10 +10,3 @@ div{
     font-size: 20px;
 }
 
-input{
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 1px solid #e7edf3;
-}
-

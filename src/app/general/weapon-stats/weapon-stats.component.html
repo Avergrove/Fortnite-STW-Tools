@@ -1,17 +1,17 @@
-<div class="card" style="width: 18rem;">
+<div class="card">
     <div class="card-header">
         <h5>Siegebreaker</h5>
         <div><i class="	fa fa-flash"></i> 87</div>
     </div>
-    <img class="card-img-top" style="max-width: match_parent; max-height: 20vh;" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest?cb=20170330235552"
-        alt="Weapon Image Placeholder">
+
     <div class="card-body">
-        <ul>
-            <div><span class="stats-name">Damage: </span><input class="form-inline stats-form" [(ngModel)]="weapon.damage"></div>
-            <div><span class="stats-name">Headshot Damage: </span> <input class="form-inline stats-form" [(ngModel)]="weapon.headshotDamage">%</div>
-            <div><span class="stats-name">Crit Chance: </span><input class="form-inline stats-form" [(ngModel)]="weapon.critChance">%</div>
-            <div><span class="stats-name">Crit Bonus: </span><input class="form-inline stats-form" [(ngModel)]="weapon.critDamage">%</div>
-            <div class="weapon-description">{{weapon.description}}</div>
-        </ul>
+
+        <input type="button" class="btn btn-success" value="Show unmodified stats">
+        <div><span class="stats-name">Damage: </span><input class="form-inline stats-form" [(ngModel)]="weapon.damage"></div>
+        <div><span class="stats-name">Headshot Damage: </span> <input class="form-inline stats-form" [(ngModel)]="weapon.headshotDamage">%</div>
+        <div><span class="stats-name">Crit Chance: </span><input class="form-inline stats-form" [(ngModel)]="weapon.critChance">%</div>
+        <div><span class="stats-name">Crit Bonus: </span><input class="form-inline stats-form" [(ngModel)]="weapon.critDamage">%</div>
+        <div class="weapon-description">{{weapon.description}}</div>
+
     </div>
 </div>

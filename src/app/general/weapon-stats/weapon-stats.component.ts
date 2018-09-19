@@ -18,12 +18,15 @@ export class WeaponStatsComponent implements OnInit {
   @Input() currentCritDamage: number;
 
   description: string;
+  modDisplay: boolean;  // Determines whether to show modified stats.
 
   @Output() statsChangeEvent = new EventEmitter<Weapon>();
 
-  constructor(private stwService: StwService) { }
+  constructor(private stwService: StwService) { 
+  }
 
   ngOnInit() {
     this.weapon = this.stwService.getSelectedWeapon();
+    this.modDisplay = true;
   }
 }

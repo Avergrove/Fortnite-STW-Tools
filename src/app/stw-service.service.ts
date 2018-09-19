@@ -45,8 +45,8 @@ export class StwService {
       break;
 
       case 2:
-      perks.push(new StatsPerk("Damage up", "Increase reload Speed by {value}%", 3, 5, Constants.STATS_DAMAGE, 20));
-      perks.push(new StatsPerk("Crit up", "Increase your mom by {value}", 1, 5, Constants.STATS_DAMAGE, 25));
+      perks.push(new StatsPerk("Damage up", "Increase Reload Speed by {value}%", 3, 5, Constants.STATS_DAMAGE, 20));
+      perks.push(new StatsPerk("Crit up", "Increase Critical Rating by {value}", 1, 5, Constants.STATS_DAMAGE, 25));
       break;
 
     }

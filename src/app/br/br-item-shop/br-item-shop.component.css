@@ -1,0 +1,31 @@
+.col-md{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    margin: 5px;
+}
+
+.item-image{
+    display: float;
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.item-vbucks-image{
+    max-width: 7.5%;
+    max-height: 7.5%;
+}
+
+
+
+.cell-epic{
+    background-color: #581558;
+}
+
+.cell-legendary{
+    background-color: #c59f36;
+}
+
+#credits{
+    font-size: 10px;
+}

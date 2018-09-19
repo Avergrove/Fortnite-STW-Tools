@@ -15,7 +15,6 @@ export interface IConstants{
     ELEMENT_PHYSICAL: string;
     ELEMENT_EDGE: string;
 
-
     TEXT_PERK_DAMAGE_BONUS: string;
     TEXT_PERK_HEADSHOT_BONUS: string;
     TEXT_PERK_CRIT_RATING: string;
