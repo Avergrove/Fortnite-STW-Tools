@@ -1,0 +1,229 @@
+{
+    "date_layout": "day-month-year",
+    "lastupdate": 1537315206,
+    "date": "19-09-18",
+    "rows": 10,
+    "vbucks": "https://fortnite-public-files.theapinetwork.com/fortnite-vbucks-icon.png",
+    "items": [
+        {
+            "itemid": "5003183-460d2c0-8d1f1dd-e9d05d9",
+            "name": "Victory Lap",
+            "cost": "500",
+            "featured": 1,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/pickaxe/14808769291723387c21cc59d837ecf8.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/pickaxe/14808769291723387c21cc59d837ecf8.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/5003183-460d2c0-8d1f1dd-e9d05d9.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "pickaxe",
+                "type": "pickaxe",
+                "rarity": "uncommon",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "e6bc629-93506ff-5ebc038-fd6c4d5",
+            "name": "Checker",
+            "cost": "500",
+            "featured": 1,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/glider/1704b2222906766e44b2a78ddda3bb0e.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/1704b2222906766e44b2a78ddda3bb0e.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/e6bc629-93506ff-5ebc038-fd6c4d5.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "glider",
+                "type": "glider",
+                "rarity": "uncommon",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "9f29cd4-6a18a2a-3fd3754-cda7ebb",
+            "name": "Feathered Flyer",
+            "cost": "800",
+            "featured": 1,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/glider/ed6457ffc85179bdb67e59760cfe76fd.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/ed6457ffc85179bdb67e59760cfe76fd.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/9f29cd4-6a18a2a-3fd3754-cda7ebb.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "glider",
+                "type": "glider",
+                "rarity": "rare",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "ff624e6-60edf93-d2a9035-6dc487b",
+            "name": "Battle Pass Tiers",
+            "cost": "900",
+            "featured": 1,
+            "refundable": 0,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/misc/29a49aaf4b74ce171593c3e7046b9f13.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/misc/29a49aaf4b74ce171593c3e7046b9f13.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/ff624e6-60edf93-d2a9035-6dc487b.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "misc",
+                "type": "misc",
+                "rarity": "epic",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "88778dc-264b96d-2f34091-4130e6e",
+            "name": "Whiplash",
+            "cost": "800",
+            "featured": 1,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/outfit/92ce54f2d72318bcfb306ea86f7ac1b3.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/92ce54f2d72318bcfb306ea86f7ac1b3.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/88778dc-264b96d-2f34091-4130e6e.png",
+                    "featured": {
+                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/88778dc-264b96d-2f34091-4130e6e.png",
+                        "background": "https://fortnite-public-files.theapinetwork.com/image/88778dc-264b96d-2f34091-4130e6e/featured.png"
+                    }
+                },
+                "captial": "outfit",
+                "type": "outfit",
+                "rarity": "uncommon",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "e084b05-b7132a4-3318158-114e7c0",
+            "name": "Raven",
+            "cost": "2000",
+            "featured": 1,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/outfit/b28f6dc86bc05dfb16d8573ca39f12f4.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/b28f6dc86bc05dfb16d8573ca39f12f4.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/e084b05-b7132a4-3318158-114e7c0.png",
+                    "featured": {
+                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/e084b05-b7132a4-3318158-114e7c0.png",
+                        "background": "https://fortnite-public-files.theapinetwork.com/image/e084b05-b7132a4-3318158-114e7c0/featured.png"
+                    }
+                },
+                "captial": "outfit",
+                "type": "outfit",
+                "rarity": "legendary",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "1bf93f5-ae32299-36f2e73-48d1843",
+            "name": "Batsickle",
+            "cost": "800",
+            "featured": 0,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/pickaxe/99835af5a3e5b60f39f699f7a1010313.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/pickaxe/99835af5a3e5b60f39f699f7a1010313.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/1bf93f5-ae32299-36f2e73-48d1843.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "pickaxe",
+                "type": "pickaxe",
+                "rarity": "rare",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "738cd23-1fe0ebf-3609a2d-1eba167",
+            "name": "Jungle Scout",
+            "cost": "800",
+            "featured": 0,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/outfit/cf7697279e9ce3fb290e3fc9bad33b41.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/cf7697279e9ce3fb290e3fc9bad33b41.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/738cd23-1fe0ebf-3609a2d-1eba167.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "outfit",
+                "type": "outfit",
+                "rarity": "uncommon",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "73f9b6d-ac214d6-3430143-a98149e",
+            "name": "Zany",
+            "cost": "500",
+            "featured": 0,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/emote/5f6ece7903a4754a546a5970146058bf.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/emote/5f6ece7903a4754a546a5970146058bf.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/73f9b6d-ac214d6-3430143-a98149e.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "emote",
+                "type": "emote",
+                "rarity": "rare",
+                "obtained_type": "vbucks"
+            }
+        },
+        {
+            "itemid": "160ff3d-49a5c35-52ba860-181f2dc",
+            "name": "Rocket Rodeo",
+            "cost": "800",
+            "featured": 0,
+            "refundable": 1,
+            "item": {
+                "image": "https://fortnite-public-files.theapinetwork.com/emote/92f28a6a252d6656b790f55d27195e4a.png",
+                "images": {
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/emote/92f28a6a252d6656b790f55d27195e4a.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/160ff3d-49a5c35-52ba860-181f2dc.png",
+                    "featured": {
+                        "transparent": null,
+                        "background": null
+                    }
+                },
+                "captial": "emote",
+                "type": "emote",
+                "rarity": "epic",
+                "obtained_type": "vbucks"
+            }
+        }
+    ]
+}
